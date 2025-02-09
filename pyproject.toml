@@ -1,6 +1,6 @@
 [project]
 name = "qtcam"
-version = "1.0"
+version = "1.0.0"
 description = "PyQt5 widget for OpenCV camera preview with multiple instantiation and real time image filtering."
 authors = [
     {name = "Pablo Chinea",email = "khertz@gmail.com"}
