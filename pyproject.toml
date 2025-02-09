@@ -1,0 +1,32 @@
+[project]
+name = "qtcam"
+version = "1.0.0"
+description = "PyQt5 widget for OpenCV camera preview with multiple instantiation and real time image filtering."
+authors = [
+    {name = "Pablo Chinea",email = "khertz@gmail.com"}
+]
+license = {text = "GPL-3.0-only"}
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pyqt5 (>=5.15,<6.0.0)",
+    "opencv-python-headless (>=4.11,<5.0.0.0)"
+]
+dynamic = ["classifiers"]
+
+[project.urls]
+repository = "https://github.com/pchinea/qtcam"
+"Bug Tracker" = "https://github.com/pchinea/qtcam/issues"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: X11 Applications :: Qt",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+]

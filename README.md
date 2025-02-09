@@ -7,7 +7,12 @@ This module contains  the next classes:
   is available.
   * `CameraWidget`: Implements a Qt widget for camera image preview.
   * `Filters`: Implements some basic image filters.
-  
+
+## Installation
+```shell
+pip install qtcam
+```
+
 ## Usage
 ### Simple preview widget 
 ```python
@@ -59,6 +64,14 @@ widget.add_filter(custom_filter)
 widget.show()
 
 app.exec_()
+```
+
+### Selecting another camera
+Another camera can be selected by passing its index to `CameraDevice` (the default index is 0).
+```python
+from qtcam import CameraDevice
+
+device = CameraDevice(1)
 ```
 
 ## Examples
